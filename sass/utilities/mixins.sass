@@ -63,6 +63,8 @@
   -webkit-overflow-scrolling: touch
 
 =placeholder
+  &::placeholder
+    @content
   $placeholders: ':-moz' ':-webkit-input' '-moz' '-ms-input'
   @each $placeholder in $placeholders
     &:#{$placeholder}-placeholder
